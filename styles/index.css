@@ -1,0 +1,38 @@
+@import "social-link.css";
+@import "header.css";
+@import "sections.css";
+@import "contact-form.css";
+@import "fonts.css";
+
+body {
+  font-family: 'Lexend Deca';
+  background-color: #1d212d;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.container {
+  max-width: 1012px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1025px) {
+  .container {
+    padding: 0 24px;
+  }
+}

@@ -1,0 +1,147 @@
+@import "colors";
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+.section-1 {
+  background-image: url("../images/frames/frame1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 20px;
+
+  &__text-section {
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 881px;
+    padding: 25px 0;
+  }
+  
+  &__br-mobile {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      max-width: 560px;
+    }
+
+    &__br-mobile {
+      display: inline;
+    }
+
+    &__br-desktop {
+      display: none;
+    }
+  }
+
+  @media (max-width: 533px) {
+    background-image: none;
+    height: 80vh;
+    margin-top: 84px;
+
+    &__br {
+      display: inline;
+    }
+  }
+}
+
+.section-2 {
+  height: calc(100vh + 124px);
+  background-image: url("../images/frames/frame2.png");
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: cover;
+  flex-direction: column;
+  gap: 42px;
+
+  &__text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 34px;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      width: 350px;
+    }
+
+    span {
+      width: 250px;
+    }
+  }
+
+  @media (max-width: 533px) {
+    background-image: url("../images/frames/frame2-mobile.png");
+    background-position-y: 0;
+  }
+}
+
+.section-3 {
+  height: 532px;
+}
+
+.section-4 {
+  height: calc(100vh + 124px);
+  background-image: url("../images/frames/frame4.png");
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: cover;
+  text-align: left;
+  justify-content: start;
+  align-items: end;
+
+  &__mail-section {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 24px;
+
+    @media (max-width: 768px) {
+      gap: 12px;
+
+      a {
+        font-size: 34px;
+        line-height: 42px;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    padding-bottom: 64px;
+
+    @media (max-width: 769px) {
+      padding-bottom: 40px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 769px) {
+    height: 90vh;
+  }
+}

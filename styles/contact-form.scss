@@ -1,0 +1,108 @@
+@import "colors";
+
+.contact-form {
+  width: 100%;
+  height: 532px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+  background-color: $background-color-2;
+
+  button[type=submit]:active {
+    span {
+      display: none;
+    }
+
+    img {
+      display: block;
+    }
+  }
+
+  &__text {
+    max-width: 520px;
+    text-align: left;
+  }
+
+  &__control {
+    display: flex;
+    gap: 12px;
+
+    @media (max-width: 769px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__input {
+    box-sizing: border-box;
+    border: 0;
+    width: 332px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0 24px;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 24px;
+    outline: none;
+
+    &::placeholder {
+      color: $background-color-2;
+    }
+
+    &:focus-visible {
+      border: 2px solid $yellow;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 141px;
+    height: 64px;
+    border-radius: 6px;
+    border: 0;
+    color: white;
+    background-color: $orange;
+
+    & > span {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    & > img {
+      display: none;
+    }
+
+    &:hover {
+      background-color: $dark-orange;
+    }
+  }
+
+  @media(max-width: 1024px) {
+    flex-direction: column;
+    gap: 30px;
+
+    &__text {
+      text-align: center;
+    }
+
+    &__button {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0 24px;
+  }
+
+  @media (max-width: 569px) {
+    &__text {
+      width: 350px;
+    }
+  }
+}

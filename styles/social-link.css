@@ -1,0 +1,22 @@
+.social-link {
+  width: 56px;
+  height: 56px;
+  position: relative;
+}
+.social-link--main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.social-link--active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.social-link:hover .social-link--main {
+  display: none;
+}
+
+/*# sourceMappingURL=social-link.css.map */

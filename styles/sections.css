@@ -1,0 +1,139 @@
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+.section-1 {
+  background-image: url("../images/frames/frame1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 20px;
+}
+.section-1__text-section {
+  background-color: #1d212d;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 881px;
+  padding: 25px 0;
+}
+.section-1__br-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .section-1 h1 {
+    max-width: 560px;
+  }
+  .section-1__br-mobile {
+    display: inline;
+  }
+  .section-1__br-desktop {
+    display: none;
+  }
+}
+@media (max-width: 533px) {
+  .section-1 {
+    background-image: none;
+    height: 80vh;
+    margin-top: 84px;
+  }
+  .section-1__br {
+    display: inline;
+  }
+}
+
+.section-2 {
+  height: calc(100vh + 124px);
+  background-image: url("../images/frames/frame2.png");
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: cover;
+  flex-direction: column;
+  gap: 42px;
+}
+.section-2__text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.section-2__socials {
+  display: flex;
+  gap: 34px;
+}
+@media (max-width: 768px) {
+  .section-2 h1 {
+    width: 350px;
+  }
+  .section-2 span {
+    width: 250px;
+  }
+}
+@media (max-width: 533px) {
+  .section-2 {
+    background-image: url("../images/frames/frame2-mobile.png");
+    background-position-y: 0;
+  }
+}
+
+.section-3 {
+  height: 532px;
+}
+
+.section-4 {
+  height: calc(100vh + 124px);
+  background-image: url("../images/frames/frame4.png");
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: cover;
+  text-align: left;
+  justify-content: start;
+  align-items: end;
+}
+.section-4__mail-section {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 24px;
+}
+@media (max-width: 768px) {
+  .section-4__mail-section {
+    gap: 12px;
+  }
+  .section-4__mail-section a {
+    font-size: 34px;
+    line-height: 42px;
+  }
+}
+.section-4__content {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  padding-bottom: 64px;
+}
+@media (max-width: 769px) {
+  .section-4__content {
+    padding-bottom: 40px;
+  }
+}
+.section-4__footer {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .section-4__footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 769px) {
+  .section-4 {
+    height: 90vh;
+  }
+}
+
+/*# sourceMappingURL=sections.css.map */
