@@ -1,0 +1,34 @@
+.additional-page {
+  margin-top: 200px;
+}
+.additional-page .page-body {
+  color: white;
+  margin: 2em auto;
+  max-width: 900px;
+  line-height: 1.5;
+}
+.additional-page .section-4__footer {
+  max-width: 900px;
+  margin: 64px auto;
+}
+.additional-page h1 {
+  font-size: 1.875rem;
+  margin-top: 1.875rem;
+}
+.additional-page .page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.75em;
+}
+.additional-page p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.additional-page ul {
+  -webkit-padding-start: 1.7em;
+          padding-inline-start: 1.7em;
+}
+.additional-page ul > li {
+  padding-left: 0.1em;
+}/*# sourceMappingURL=terms-of-use.css.map */

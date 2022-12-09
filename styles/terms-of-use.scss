@@ -1,0 +1,41 @@
+.additional-page {
+    margin-top: 200px;
+
+    .page-body {
+        color: white;
+        margin: 2em auto;
+        max-width: 900px;
+        line-height: 1.5;
+    }
+
+    .section-4__footer {
+        max-width: 900px;
+        // padding-bottom: ;
+        margin: 64px auto ;
+    }
+
+    h1 {
+        font-size: 1.875rem;
+        margin-top: 1.875rem;
+    }
+
+    .page-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 0.75em;
+    }
+
+    p {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    ul {
+        padding-inline-start: 1.7em;
+    }
+
+    ul>li {
+        padding-left: 0.1em;
+    }
+}

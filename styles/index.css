@@ -4,6 +4,9 @@
 @import "contact-form.css";
 @import "fonts.css";
 
+/* pages */
+@import "terms-of-use.css";
+
 body {
   font-family: 'Lexend Deca';
   background-color: #1d212d;
