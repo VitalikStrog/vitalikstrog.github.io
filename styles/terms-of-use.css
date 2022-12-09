@@ -1,14 +1,12 @@
 .additional-page {
-  margin-top: 200px;
+  margin-top: 200px !important;
 }
 .additional-page .page-body {
   color: white;
   margin: 2em auto;
-  max-width: 900px;
   line-height: 1.5;
 }
 .additional-page .section-4__footer {
-  max-width: 900px;
   margin: 64px auto;
 }
 .additional-page h1 {
