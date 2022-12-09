@@ -1,11 +1,12 @@
+
 @import "social-link.css";
 @import "header.css";
 @import "sections.css";
 @import "contact-form.css";
 @import "fonts.css";
 
-/* pages */
 @import "terms-of-use.css";
+/* pages */
 
 body {
   font-family: 'Lexend Deca';
